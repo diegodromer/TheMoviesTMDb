@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieListFragment">
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.diegolima.TheMoviesTMDb.ui.movielist.MovieListFragment"
+        android:label="MovieListFragment" >
+
+        <action
+            android:id="@+id/action_movieListFragment_self"
+            app:destination="@id/movieListFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+        <action
+            android:id="@+id/action_movieListFragment_to_nowPlayingDetailFragment"
+            app:destination="@id/nowPlayingDetailFragment" />
+        <action
+            android:id="@+id/action_movieListFragment_to_topRatedFragment"
+            app:destination="@id/topRatedDetailFragment" />
+        <action
+            android:id="@+id/action_movieListFragment_self2"
+            app:destination="@id/movieListFragment" />
+        <action
+            android:id="@+id/action_movieListFragment_to_upcomingDetailFragment"
+            app:destination="@id/upcomingDetailFragment" />
+        <action
+            android:id="@+id/action_movieListFragment_to_popularDetailFragment"
+            app:destination="@id/popularDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nowPlayingDetailFragment"
+        android:name="com.diegolima.TheMoviesTMDb.ui.nowplayingdetail.NowPlayingDetailFragment"
+        android:label="NowPlayingDetailFragment" >
+        <action
+            android:id="@+id/action_nowPlayingDetailFragment_self"
+            app:destination="@id/nowPlayingDetailFragment" />
+        <action
+            android:id="@+id/action_nowPlayingDetailFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topRatedDetailFragment"
+        android:name="com.diegolima.TheMoviesTMDb.ui.toprateddetail.TopRatedDetailFragment"
+        android:label="TopRatedDetailFragment"
+        tools:layout="@layout/fragment_toprated_detail" >
+        <action
+            android:id="@+id/action_topRatedDetailFragment_self"
+            app:destination="@id/topRatedDetailFragment" />
+        <action
+            android:id="@+id/action_topRatedDetailFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingDetailFragment"
+        android:name="com.diegolima.TheMoviesTMDb.ui.upcomingdetail.UpcomingDetailFragment"
+        android:label="fragment_upcoming_detail"
+        tools:layout="@layout/fragment_upcoming_detail" >
+        <action
+            android:id="@+id/action_upcomingDetailFragment_self"
+            app:destination="@id/upcomingDetailFragment" />
+        <action
+            android:id="@+id/action_upcomingDetailFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularDetailFragment"
+        android:name="com.diegolima.TheMoviesTMDb.ui.populardetail.PopularDetailFragment"
+        android:label="fragment_popular_detail"
+        tools:layout="@layout/fragment_popular_detail" >
+        <action
+            android:id="@+id/action_popularDetailFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment" />
+        <action
+            android:id="@+id/action_popularDetailFragment_self"
+            app:destination="@id/popularDetailFragment" />
+    </fragment>
+
+</navigation>

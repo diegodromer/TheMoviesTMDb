@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TheMoviesTMDb</string>
+
+    <string name="title_to_movie">Nome do filme</string>
+    <string name="language_original">Idioma Original: </string>
+    <string name="english">Inglês</string>
+    <string name="release">Lançamento: </string>
+    <string name="media">Nota</string>
+    <string name="poster_to_movie">Poster do Filme</string>
+
+    <string name="btnUpdate">TENTAR DE NOVO</string>
+    <string name="textDescrition">Atualmente não estamos conseguindo falar com o servidor.\nPor favor, tente de novo.</string>
+    <string name="textTitle">"Desculpa!"</string>
+
+    <string name="strSimilares">Mais Como Este</string>
+
+    <string name="strSinopse">Sinopse</string>
+    <string name="strCommets">Comentários</string>
+    <string name="strOverview">The Asgardian Loki encounters the Other, the leader of an extraterrestrial race known as the Chitauri. In exchange for retrieving the Tesseract...</string>
+    <string name="strBodyComment">It was great. This movie was a continuation of the Avengers of the Eternal War. See it first and then this movie</string>
+    <string name="strLogo_da_empresa">Logo da empresa</string>
+    <string name="strNowPlaying">Em Exibição</string>
+    <string name="strTopRated">Em Breve</string>
+    <string name="strUpcoming">Mais Populares</string>
+    <string name="strPopular">Melhores Avaliados</string>
+
+</resources>
